@@ -1,0 +1,7 @@
+[user]
+	name = Nawasan Wisitsingkhon
+	email = nawasan.dev@gmail.com
+[init]
+	defaultBranch = main
+[core]
+	editor = vim
