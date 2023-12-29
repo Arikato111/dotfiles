@@ -23,3 +23,7 @@ sh -c "$(curl -fsLS get.chezmoi.io)" -- init --apply Arikato111
     - theme
 - nvm (install with bash script)
 - packages with apt
+
+### TODOs
+
+- [ ] I want it autoinstall programs I using (nvm, nodejs, rust, others). 
