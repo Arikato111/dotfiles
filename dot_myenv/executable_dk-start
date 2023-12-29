@@ -1,0 +1,2 @@
+sudo systemctl start docker.socket
+sudo systemctl start docker.service

@@ -115,14 +115,8 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-export PATH=$PATH:$HOME/myenv:/home/nawasan/Applications/FileZilla3/bin:/sbin/:$HOME/Android/Sdk/platform-tools:/opt/godot4/bin   
+export PATH=$PATH:$HOME/.myenv:/home/nawasan/Applications/FileZilla3/bin:/sbin/:$HOME/Android/Sdk/platform-tools:/opt/godot4/bin   
 export ANDROID_SDK_ROOT=/home/nawasan/Android/Sdk
 
 export PATH=$PATH:$HOME/.subnet/bin
 
-# bun completions
-[ -s "/home/nawasan/.bun/_bun" ] && source "/home/nawasan/.bun/_bun"
-
-# bun
-export BUN_INSTALL="$HOME/.bun"
-export PATH="$BUN_INSTALL/bin:$PATH"
