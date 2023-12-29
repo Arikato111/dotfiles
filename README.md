@@ -1,6 +1,6 @@
 ## Dotfiles
 
-I I currently learn and try to understand what is dotfiles manager. I have saw dotfiles repo in many account on github. I think it interesting and I want to understand it.
+I currently learn and try to understand what is dotfiles manager. I have saw dotfiles repo in many account on github. I think it interesting and I want to understand it.
 
 ### Get started
 
