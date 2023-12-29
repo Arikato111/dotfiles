@@ -1,4 +1,5 @@
 #!/bin/bash
+
 packages=(
     git
     neofetch
@@ -7,7 +8,17 @@ packages=(
     zsh
 )
 
-for value in ${packages[@]}
-do
-    echo $value 
-done
+# loop to install packages with apt
+echo "installing packages from apt (y/n)"
+read na
+if [ "$na" == "Y" ] || [ "$na" == "y" ]
+then
+    for value in ${packages[@]}
+    do
+        sudo apt install $value -y;
+    done
+fi
+
+# config default shell
+echo "set zsh default shell"
+chsh -s $(which zsh)
