@@ -4,16 +4,18 @@ I currently learn and try to understand what is dotfiles manager. I have saw dot
 
 ### Get started
 
-- install `chezmoi` at [https://www.chezmoi.io/install/](https://www.chezmoi.io/install/)
-- install dotfiles from github repo
-
-```bash
-chezmoi init --apply Arikato111
-```
-or if you are using Linux
+#### Install chezmoi and apply Dotfiles with script 
 
 ```bash
 sh -c "$(curl -fsLS get.chezmoi.io)" -- init --apply Arikato111
+```
+#### Or install before and apply after.
+
+- install `chezmoi` at [https://www.chezmoi.io/install/](https://www.chezmoi.io/install/)
+- command to apply dotfiles from github repo
+
+```bash
+chezmoi init --apply Arikato111
 ```
 
 ### Applications
