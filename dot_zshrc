@@ -120,3 +120,4 @@ export ANDROID_SDK_ROOT=/home/nawasan/Android/Sdk
 
 export PATH=$PATH:$HOME/.subnet/bin
 
+alias fpk='flatpak'
