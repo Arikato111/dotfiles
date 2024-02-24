@@ -12,8 +12,8 @@ export ZSH="$HOME/.oh-my-zsh"
 # ZSH_THEME="fino-time"
 
 # ZSH_THEME="agnoster"
-ZSH_THEME="amuse"
-# ZSH_THEME="dst"
+# ZSH_THEME="amuse"
+ZSH_THEME="dst"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -115,8 +115,9 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-export PATH=$PATH:$HOME/.myenv:/home/nawasan/Applications/FileZilla3/bin:/sbin/:$HOME/Android/Sdk/platform-tools 
-export ANDROID_SDK_ROOT=/home/nawasan/Android/Sdk
+export PATH=$PATH:$HOME/.myenv:/sbin/
+# export PATH=$PATH:$HOME/Android/Sdk/platform-tools 
+# export ANDROID_SDK_ROOT=/home/nawasan/Android/Sdk
 
 export PATH=$PATH:$HOME/.subnet/bin
 
