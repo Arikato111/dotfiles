@@ -122,3 +122,4 @@ export PATH=$PATH:$HOME/.myenv:/sbin/
 export PATH=$PATH:$HOME/.subnet/bin
 
 alias fpk='flatpak'
+. "$HOME/.myenv/aliaser.sh"
