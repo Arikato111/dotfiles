@@ -80,6 +80,7 @@ fpath=(/home/nawasan/.oh-my-zsh/custom/plugins/zsh-completions/src $fpath)
 plugins=(git
     zsh-autosuggestions
     zsh-syntax-highlighting
+    command-not-found
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -119,7 +120,7 @@ export PATH=$PATH:$HOME/.myenv:/sbin/
 # export PATH=$PATH:$HOME/Android/Sdk/platform-tools 
 # export ANDROID_SDK_ROOT=/home/nawasan/Android/Sdk
 
-export PATH=$PATH:$HOME/.subnet/bin
+export PATH=$PATH:$HOME/.cargo/bin
 
 alias fpk='flatpak'
 . "$HOME/.myenv/aliaser.sh"
