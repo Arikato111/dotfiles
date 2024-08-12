@@ -21,8 +21,8 @@ export NVM_DIR="$HOME/.nvm"
 
 PROMPT_EOL_MARK=""
 
-export PATH=$PATH:$HOME/.myenv:/sbin/:$HOME/bin:$HOME/.cargo/bin
+export PATH=$PATH:/sbin/:$HOME/bin:$HOME/.cargo/bin
 
-. "$HOME/.myenv/aliaser.sh"
+. "$HOME/bin/aliaser.sh"
 
-. "$HOME/.myenv/kali_theme.sh"
+. "$HOME/bin/kali_theme.sh"
