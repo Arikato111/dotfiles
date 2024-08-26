@@ -20,6 +20,8 @@ chezmoi init --apply Arikato111
 
 ### Applications
 
+- nvim
+    - LazyVim
 - oh-my-zsh 
     - extensions
     - theme
