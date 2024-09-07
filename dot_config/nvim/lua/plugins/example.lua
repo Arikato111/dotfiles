@@ -5,4 +5,12 @@ return {
     "stevearc/conform.nvim",
     cond = false,
   },
+  {
+    "rcarriga/nvim-notify",
+    opts = {
+      level = 3,
+      render = "minimal",
+      stages = "static",
+    },
+  },
 }
