@@ -1,3 +1,5 @@
+require("mason").setup()
+
 require("mason-lspconfig").setup({
   ensure_installed = {
     "cssls",
@@ -5,3 +7,5 @@ require("mason-lspconfig").setup({
     "pylsp",
   }
 })
+
+return {}
