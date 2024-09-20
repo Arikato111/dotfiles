@@ -21,8 +21,9 @@ export NVM_DIR="$HOME/.nvm"
 
 PROMPT_EOL_MARK=""
 
-export PATH=$PATH:/sbin/:$HOME/bin:$HOME/.cargo/bin
+export PATH=$PATH:/sbin/:$HOME/bin:$HOME/.cargo/bin:$HOME/go/bin
 
-. "$HOME/bin/aliaser.sh"
-
-. "$HOME/bin/kali_theme.sh"
+# include all files in '.zshrc.d' directory
+for file in $HOME/.zshrc.d/*; do
+. $file;
+done
