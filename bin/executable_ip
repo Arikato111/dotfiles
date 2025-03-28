@@ -1,0 +1,10 @@
+#!/usr/bin/zsh
+
+if [[ "$1" == "pub"|| "$1" == "p" ]]; then
+	printf "ipv4: ";
+	curl ifconfig.co -4;
+	printf "ipv6: ";
+	curl ifconfig.co -6;
+else
+	/usr/sbin/ip $@;
+fi;
