@@ -6,3 +6,4 @@ alias fpk="flatpak"
 alias q="exit"
 alias dug='du -h * --max-depth=0 | grep G'
 alias dud='du -hd 0 '
+alias psn='ps -o user,pid,ni,stat,start,time,cmd'
