@@ -1,7 +1,10 @@
 [user]
 	name = Nawasan Wisitsingkhon
 	email = nawasan.dev@gmail.com
+	signingkey = nawasan.dev@gmail.com
 [init]
 	defaultBranch = main
 [core]
 	editor = vim
+[commit]
+	gpgsign = true
