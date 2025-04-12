@@ -1,4 +1,4 @@
-runner=docker
+runner=podman
 alias archlinux:docker='$runner run -it --rm --network=host --name archlinux archlinux'
 alias debian:docker='$runner run -it --rm --network=host --name debian debian'
 alias kali:docker='$runner run -it --rm --network=host --name kali kalilinux/kali-rolling'
