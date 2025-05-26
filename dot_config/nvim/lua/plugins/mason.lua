@@ -7,6 +7,7 @@ return {
         --  mason auto nstall here
         "css-lsp",
         "html-lsp",
+        "prettier",
       },
     },
   },
