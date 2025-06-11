@@ -15,9 +15,20 @@ alias fwd='sudo firewall-cmd'
 alias dug='du -h * --max-depth=0 | grep -P "G\t"'
 # alias dud='du -hd 0 '
 dud() {
-  if [[ "$@" == "" ]]; then
+  if [[ "$*" == "" ]]; then
     du -hd 0 . 2>/dev/null
   else
-    du -hd 0 $@ 2>/dev/null
+    du -hd 0 "$@" 2>/dev/null
   fi
+}
+
+# Podman
+lpod() {
+  for i in $(podman images | grep local | awk '{print $1}'); do
+    print "$i"
+    if [[ "$1" == 'r' ]]; then
+      echo deleting...
+      podman rmi "$i"
+    fi
+  done
 }
