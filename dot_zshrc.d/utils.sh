@@ -10,6 +10,7 @@ alias pod='podman'
 alias podc='podman-compose'
 alias ipd='ip addr show'
 alias fwd='sudo firewall-cmd'
+alias pxc='proxychains -q'
 
 # Disk utils
 alias dug='du -h * --max-depth=0 | grep -P "G\t"'
