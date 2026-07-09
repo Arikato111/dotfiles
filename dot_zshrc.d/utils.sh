@@ -3,6 +3,8 @@ alias fpk="flatpak"
 alias q="exit"
 alias psn='ps -o user,pid,ni,stat,start,time,cmd'
 alias y='yes'
+alias first='head -1'
+alias last='tail -1'
 lss() {
     if [[ "$@" == "" ]];then
         du -hd 0 -- * 2> /dev/null | sort -h
@@ -61,4 +63,3 @@ loop () {
 		"${@:2}"
 	done
 }
-
