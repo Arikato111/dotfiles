@@ -16,7 +16,7 @@ def vm [
     if ($in | is-not-empty)
       { $in.image |to text| str trim }
     else {
-      if (input $"Are you sure to run \"($image)\" \(y/N\)?" | str downcase) == "y" { $image } else {print "Canceled"; return} })
+      if (input $"Are you sure to run \"($image)\" \(y/N\)?" | str lowercase) == "y" { $image } else {print "Canceled"; return} })
 
   if $v {
     ^$vm_command run -it --rm --network=host -v $"(pwd):/mnt" --entrypoint /bin/sh --name $image_name $image
