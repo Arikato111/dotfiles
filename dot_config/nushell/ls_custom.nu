@@ -19,9 +19,9 @@ def ls [
   }
   if $long {
   core_ls --all=$all --long=$long --short-names=$short_names --full-paths=$full_paths --du=$du --directory=$directory --mime-type=$mime_type --threads=$threads ...$path
-  | select mode inode user group size modified type name
+  | select type mode inode user group modified size name
   } else {
   core_ls --all=$all --long=$long --short-names=$short_names --full-paths=$full_paths --du=$du --directory=$directory --mime-type=$mime_type --threads=$threads ...$path
-  | select size modified type name
+  | select type modified size name
   }
 }
