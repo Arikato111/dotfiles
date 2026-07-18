@@ -21,7 +21,7 @@ def vm [
   if $v {
     ^$vm_command run -it --rm --network=host -v $"(pwd):/mnt" --entrypoint /bin/sh --name $image_name $image
   } else {
-    ^$vm_command run -it --rm --network=host --name $image_name --entrypoint /bin/sh $image
+    ^$vm_command run -it --rm --network=host --name ($image_name| str replace "/" "_") --entrypoint /bin/sh $image
   }
 }
 
