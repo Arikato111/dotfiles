@@ -20,9 +20,14 @@ alias exp = explore
 def lsm [path: glob = .] {
     ls -l $path | select -o type mode user group name size
 }
-
+# list files and directories and print
+def lsp [path: glob = .] { ls | p }
 # list only directories
 def lsd [path: glob = .] { ls -a $path | where type == dir }
+# list only files
+def lsf [path: glob = .] { ls -a $path | where type == file }
+# list only files with size
+def lsfs [path: glob = .] { ls -a $path | where type == file | sort-by size }
 # list only directories with size
 def lsds [path: glob = .] { ls -ad $path | where type == dir|sort-by size }
 # list only directories and print
