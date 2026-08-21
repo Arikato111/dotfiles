@@ -1,0 +1,13 @@
+#:schema https://docs.jj-vcs.dev/latest/config-schema.json
+
+[ui]
+default-command = "log"
+
+[user]
+name = "Nawasan Wisitsingkhon"
+email = "zocketzero@proton.me"
+
+[signing]
+backend = "gpg"
+key = "zocketzero@proton.me"
+behavior = "own"
