@@ -2,6 +2,7 @@
 
 [ui]
 default-command = "log"
+editor = "vim"
 
 [user]
 name = "Nawasan Wisitsingkhon"
