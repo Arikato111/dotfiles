@@ -12,3 +12,19 @@ email = "zocketzero@proton.me"
 backend = "gpg"
 key = "zocketzero@proton.me"
 # behavior = "own"
+
+[templates]
+# Overrides default 'jj log' format
+log = 'builtin_log_compact ++ signature_status ++ "\n"'
+
+[template-aliases]
+'signature_status' = '''
+if(signature,
+  label("green", " [signed: " ++ signature.display() ++ "]"),
+  label("unsigned_label", " [unsign]")
+)
+'''
+
+[colors]
+"unsigned_label" = "red"
+"green" = "green"
