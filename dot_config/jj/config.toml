@@ -15,12 +15,15 @@ key = "zocketzero@proton.me"
 
 [templates]
 # Overrides default 'jj log' format
-log = 'builtin_log_compact ++ signature_status ++ "\n"'
+log = 'builtin_log_compact ++ "" ++ signature_status ++ "\n"'
 
 [template-aliases]
 'signature_status' = '''
 if(signature,
-  label("green", " [signed: " ++ signature.display() ++ "]"),
+if (signature.display(),
+  label("green", " [signed: "++ signature.status() ++ " " ++ signature.display() ++ "]"),
+  label("green", " [signed: "++ label("red", signature.status()) ++ " " ++ author.name() ++ " <" ++ author.email() ++ "> " ++ "]"),
+),
   label("unsigned_label", " [unsign]")
 )
 '''
@@ -28,3 +31,4 @@ if(signature,
 [colors]
 "unsigned_label" = "red"
 "green" = "green"
+"red" = "red"
