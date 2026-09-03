@@ -12,9 +12,9 @@ local terminal = "kitty"
 
 local fileManager = "xdg-open ~"
 
-local menu = "wofi --show drun"
+-- local menu = "wofi --show drun"
 
--- $menu = hyprlauncher
+local menu = "hyprlauncher"
 
 hl.monitor({
     output   = "eDP-1",
@@ -349,13 +349,13 @@ hl.bind(mainMod .. " + " .. "B", hl.dsp.exec_cmd("killall -SIGUSR1 waybar"))
 
 hl.bind(mainMod .. " + " .. "C", hl.dsp.window.close())
 
-hl.bind(mainMod .. " + " .. "SHIFT" .. " + " .. "M", hl.dsp.exec_cmd("command -v hyprshutdown >/dev/null 2>&1 && hyprshutdown || hyprctl dispatch exit"))
+hl.bind(mainMod .. " + SHIFT + " .. "M", hl.dsp.exit())
 
 hl.bind(mainMod .. " + " .. "E", hl.dsp.exec_cmd("xdg-open ~"))
 
 hl.bind(mainMod .. " + " .. "V", hl.dsp.window.float())
 
-hl.bind("ALT + SPACE", hl.dsp.exec_cmd("wofi --show drun"))
+hl.bind("ALT + SPACE", hl.dsp.exec_cmd(menu))
 
 hl.bind(mainMod .. " + " .. "P", hl.dsp.window.pseudo())
 
@@ -370,8 +370,6 @@ hl.bind(mainMod .. " + " .. "F", hl.dsp.window.fullscreen())
 hl.bind(mainMod .. " + " .. "Tab", hl.dsp.focus({ workspace = "e+1" }))
 
 hl.bind(mainMod .. " + " .. "SHIFT" .. " + " .. "Tab", hl.dsp.focus({ workspace = "e-1" }))
-
-hl.bind(mainMod .. " + " .. "Tab", hl.dsp.window.cycle_next())
 
 hl.bind(mainMod .. " + " .. "Tab", hl.dsp.window.cycle_next())
 
@@ -413,7 +411,7 @@ hl.bind("ALT + Tab", hl.dsp.group.next())
 
 -- f = forward (ถัดไป)
 
-hl.bind("ALT + SHIFT + Tab", hl.dsp.group.next({ forward = false }))
+hl.bind("ALT + SHIFT + Tab", hl.dsp.group.prev())
 
 -- b = backward (ย้อนกลับ)
 
